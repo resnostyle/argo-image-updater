@@ -4,5 +4,5 @@ helm:
     value: resnostyle/image-updater
     forcestring: true
   - name: image.tag
-    value: 1.23.3
+    value: 1.23.4
     forcestring: true
