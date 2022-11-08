@@ -1,15 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: nginx
-  namespace: argo-cd
+  name: image-updater
+  namespace: argocd
 spec:
   generators:
   - clusters: {}
   template:
     metadata:
       name: test-application
-      argocd-image-updater.argoproj.io/image-list: nginx
+      annotations:
+        argocd-image-updater.argoproj.io/image-list: resnostyle/image-updater
+        argocd-image-updater.argoproj.io/write-back-method: git
     spec:
       project: default
       destination:
