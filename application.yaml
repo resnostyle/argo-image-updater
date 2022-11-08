@@ -20,6 +20,7 @@ spec:
       source:
         path: deployment
         repoURL: git@github.com:resnostyle/argo-image-updater.git
+        targetRevision: main
       syncPolicy:
         automated:
           prune: true
