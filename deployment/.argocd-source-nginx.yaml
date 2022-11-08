@@ -1,8 +1,0 @@
-helm:
-  parameters:
-  - name: image.name
-    value: resnostyle/image-updater
-    forcestring: true
-  - name: image.tag
-    value: 1.23.5
-    forcestring: true
